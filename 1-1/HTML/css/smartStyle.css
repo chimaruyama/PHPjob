@@ -1,17 +1,16 @@
-@media screen and (min-width: 767px) {
+
+.box1{
+    width: 400px;
 }
 
 @media screen and (max-width: 767px) {
-}
+    .box1{
+      width: 300px;
+     }
+ }
 
-@media screen and (max-width: 479px) {
-}
-
-.content{
-    display: none;
-    float: none;
-    max-width: 1000px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+ @media screen and (max-width: 479px) {
+    .box1{
+      width: 150px;
+     }
+ }
