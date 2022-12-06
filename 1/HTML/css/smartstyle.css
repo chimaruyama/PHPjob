@@ -1,14 +1,48 @@
 @media screen and (max-width: 479px) {
     .header{
         width: 200px;
+        height: 200px;
     }
 
+    .header-box1 {
+        width: 60px;
+        height: 160px;
+        right: 70px;
+    }
+    
+    .header-box2 {
+        top: 30px;
+        right: 80px;
+    }
+
+    .header-box3 {
+        top: 80px;
+        right: 80px;
+    }
+
+    .header-box4 {
+        top: 130px;
+        right: 80px;
+    }
+    
     .main-left{
         width: 200px;
     }
     
     .main-right{
         width: 200px;
+    }
+
+    .main-right-box5 {
+        right: 20px;
+    }
+
+    .main-right-box6 {
+        right: 20px;
+    }
+
+    .main-right-box7 {
+        right: 20px;
     }
 
     .footer{
