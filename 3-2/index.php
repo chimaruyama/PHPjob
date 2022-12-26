@@ -7,6 +7,8 @@ function getPrice($fruits, $number){
     $value = $fruits * $number;
     return $value;
 }
+$i = 0;
+
 foreach($fruits as $key => $value){
     echo $key."は".getPrice($value,$number[$i])."円です。";
     echo '<br>';
