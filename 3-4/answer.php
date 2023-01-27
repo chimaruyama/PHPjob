@@ -15,27 +15,26 @@
 <p>①の答え</p>
 <?php
 if($answer1 == $question1){
-	$result = "正解！";
-}else{
-	$result = "不正解･･･";
+	echo = "正解！";
+}else($answer1 != $question1){
+	echo = "不正解･･･";
 }
 ?>
 
 <p>②の答え</p>
 <?php
 if($answer2 == $question2){
-	$result = "正解！";
-}else{
-	$result = "不正解･･･";
+	echo = "正解！";
+}else($answer2 != $question2){
+	echo = "不正解･･･";
 }
 ?>
 
 <p>③の答え</p>
 <?php
 if($answer3 == $question3){
-	$result = "正解！";
-}else{
-	$result = "不正解･･･";
+	echo = "正解！";
+}else($answer3 != $question3){
+	echo = "不正解･･･";
 }
 ?>
-
