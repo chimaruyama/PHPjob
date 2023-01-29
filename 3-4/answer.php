@@ -1,40 +1,38 @@
 <?php 
  $my_name = $_POST['my_name'];
+//  var_dump($my_name);
  $question1 = $_POST['question1'];
+//  var_dump($question1);
  $question2 = $_POST['question2'];
+//  var_dump($question2);
  $question3 = $_POST['question3'];
+//  var_dump($question3);
 
 
  $answer1 = $_POST['answer1'];
+//  var_dump($answer1);
  $answer2 = $_POST['answer2'];
+//  var_dump($answer2);
  $answer3 = $_POST['answer3'];
+//  var_dump($answer3);
+ //$question1 == $answer1
+ //$question2 == $answer2
+ //$question3 == $answer3
+function okcheck($p_Q,$p_A){
+	if($p_Q == $p_A){
+		print "正解！";
+	}else if ($p_Q != $p_A){
+		print "残念・・・";
+	}
+}
 ?>
-
 <p><?php echo $my_name; ?>さんの結果は・・・？</p>
 
 <p>①の答え</p>
-<?php
-if($answer1 == $question1){
-	echo = "正解！";
-}else($answer1 != $question1){
-	echo = "不正解･･･";
-}
-?>
+<?php echo okcheck($question1, $answer1);?>
 
 <p>②の答え</p>
-<?php
-if($answer2 == $question2){
-	echo = "正解！";
-}else($answer2 != $question2){
-	echo = "不正解･･･";
-}
-?>
+<?php echo okcheck($question2, $answer2);?>
 
 <p>③の答え</p>
-<?php
-if($answer3 == $question3){
-	echo = "正解！";
-}else($answer3 != $question3){
-	echo = "不正解･･･";
-}
-?>
+<?php echo okcheck($question3, $answer3);?>
