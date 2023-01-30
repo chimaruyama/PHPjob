@@ -26,13 +26,15 @@ function okcheck($p_Q,$p_A){
 	}
 }
 ?>
-<p><?php echo $my_name; ?>さんの結果は・・・？</p>
+<body>
+    <p><?php echo $my_name; ?>さんの結果は・・・？</p>
 
-<p>①の答え</p>
-<?php echo okcheck($question1, $answer1);?>
+    <p>①の答え</p>
+    <?php echo okcheck($question1, $answer1);?>
 
-<p>②の答え</p>
-<?php echo okcheck($question2, $answer2);?>
+    <p>②の答え</p>
+    <?php echo okcheck($question2, $answer2);?>
 
-<p>③の答え</p>
-<?php echo okcheck($question3, $answer3);?>
+    <p>③の答え</p>
+    <?php echo okcheck($question3, $answer3);?>
+</body>
