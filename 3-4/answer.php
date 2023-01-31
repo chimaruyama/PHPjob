@@ -27,6 +27,8 @@ function okcheck($p_Q,$p_A){
 }
 ?>
 
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,14 +37,14 @@ function okcheck($p_Q,$p_A){
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <p><?php echo $my_name; ?>さんの結果は・・・？</p>
+        <p class="item"><?php echo $my_name; ?>さんの結果は・・・？</p>
 
-        <p>①の答え</p>
+        <p class="item">①の答え</p>
         <?php echo okcheck($question1, $answer1);?>
 
-        <p>②の答え</p>
+        <p class="item">②の答え</p>
         <?php echo okcheck($question2, $answer2);?>
 
-        <p>③の答え</p>
+        <p class="item">③の答え</p>
         <?php echo okcheck($question3, $answer3);?>
 </body>
