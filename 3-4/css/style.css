@@ -2,12 +2,9 @@ body{
     background-color: gray;
     text-align: center;
     font-family:serif;
-}
-.item{
     color: white;
 }
 h1{
-    color: white;
     border-bottom: solid;
     border-width: 3px;
     border-color: white;
