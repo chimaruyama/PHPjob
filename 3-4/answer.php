@@ -20,9 +20,9 @@
  //$question3 == $answer3
 function okcheck($p_Q,$p_A){
 	if($p_Q == $p_A){
-		echo "正解！";
+		print "正解！";
 	}else if ($p_Q != $p_A){
-		echo "残念・・・";
+		print "残念・・・";
 	}
 }
 ?>
@@ -40,11 +40,11 @@ function okcheck($p_Q,$p_A){
         <p><?php echo $my_name; ?>さんの結果は・・・？</p>
 
         <p>①の答え</p>
-        <?php echo okcheck($question1, $answer1);?>
+        <?php okcheck($question1, $answer1);?>
 
         <p>②の答え</p>
-        <?php echo okcheck($question2, $answer2);?>
+        <?php okcheck($question2, $answer2);?>
 
         <p>③の答え</p>
-        <?php echo okcheck($question3, $answer3);?>
+        <?php okcheck($question3, $answer3);?>
 </body>
