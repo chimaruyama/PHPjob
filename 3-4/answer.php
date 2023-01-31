@@ -20,9 +20,9 @@
  //$question3 == $answer3
 function okcheck($p_Q,$p_A){
 	if($p_Q == $p_A){
-		print "正解！";
+		echo "正解！";
 	}else if ($p_Q != $p_A){
-		print "残念・・・";
+		echo "残念・・・";
 	}
 }
 ?>
