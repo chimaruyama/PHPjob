@@ -1,27 +1,15 @@
 body{
     background-color: gray;
-}
-
-form{
     text-align: center;
-    padding: 30px;
-}
-
-h1{
-    text-align: center;
-    padding: 30px;
     font-family:serif;
+}
+.item{
     color: white;
-     border-bottom: solid;
+}
+h1{
+    color: white;
+    border-bottom: solid;
     border-width: 3px;
     border-color: white;
-}
-
-h2{
-    font-family:serif;
-    color: white;
-}
-p{
-    font-family:serif;
-    color: white;
+    padding: 30px;
 }
