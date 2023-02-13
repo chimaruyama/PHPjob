@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        th, td {
+            padding : 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <select id="select_mode" onchange="changeLang()">
+        <option id="select">選択してください</option>
+        <option id="selected_jpn">日本語</option>
+        <option id="selected_en">English</option>
+        <option id="selected_all">全て表示</option>
+    </select>
+    <table>
+        <tr id="massage_jap">
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+        <tr id="massage_en">
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
+        </tr>
+    </table>
+
+    <script>
+        function changeLang() {
+            //console.log("届いているの？");
+            let select = document.getElementById('select_mode');
+            // console.log(select_mode);
+            let selected_mode = select.options[select.selectedIndex].value;
+            //  console.log(selected_mode);
+            let id_jap = document.getElementById('massage_jap');
+            // console.log(id_jap);
+            let id_en = document.getElementById('massage_en');
+            // console.log(id_en);
+
+            //id_jap.style.visibility ='visible';
+            //id_en.style.visibility ='visible';
+
+            if(selected_mode == "日本語"){
+                id_jap.style.display='block';
+                id_en.style.display='none';
+            } else if(selected_mode == "English") {
+                id_jap.style.display='none';
+                id_en.style.display='block';
+            } else if(selected_mode == "全て表示"){
+                id_jap.style.display='block';
+                id_en.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
