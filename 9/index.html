@@ -23,14 +23,25 @@
     $('button').on("click",function(){
       // console.log('OK？')
 
-      $(this).toggleClass('change');
+      $(this).toggleClass('.left.action.right.action');
       // thisにすると全てのclassに発動？？？
-      if ($(this).toggleClass('change') == true){
-        
-      }else if ($(this).toggleClass('change') == false){
-
+      let k = $('this').hasClass('.left.action.right.action');
+      console.log(k)
+      if(k==true) {
+        on();
+        console.log('OK!');
+      }else{
+        off();
+        console.log('NO!');
       }
 
+      function on(){
+        $('.left').animate({ left: -1 * $('.left').width(), }, 500);
+        $('.right').animate({right: -1 * $('.right').width(),}, 500);
+      }function off(){
+        $('.left').animate({ left: +1 * $('.left').width(), }, 500);
+        $('.right').animate({right: +1 * $('.right').width(),}, 500);
+      }
     })
     </script>
   </body>
