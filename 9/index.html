@@ -21,7 +21,16 @@
     <script>
     //  ここにjQueryを記入
     $('button').on("click",function(){
-      $('.left, .right').toggeclass('action');
+      // console.log('OK？')
+
+      $(this).toggleClass('change');
+      // thisにすると全てのclassに発動？？？
+      if ($(this).toggleClass('change') == true){
+        
+      }else if ($(this).toggleClass('change') == false){
+
+      }
+
     })
     </script>
   </body>
