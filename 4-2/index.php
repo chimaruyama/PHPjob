@@ -27,7 +27,8 @@ $post_data = $data->getPostData();
             <div class="heder-right-bottom">最終ログイン日：<?php echo $user_data['last_login']?></div>
         </div>    
     </div>
-    <table class="main">
+    <div class="main">
+    <table class="main-tbl">
         <tr class="title">
             <th>記事ID</th>
             <th>タイトル</th>
@@ -50,6 +51,7 @@ $post_data = $data->getPostData();
             <td><?php echo $post['comment'];?></td>
             <td><?php echo $post['created'];?></td>
         </tr>
+        </div>
         <?php } ?>
     </table>
     <div class="footer">Y&I group.inc</div>
