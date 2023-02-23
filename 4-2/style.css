@@ -1,3 +1,11 @@
+body{
+    margin: 0 ;
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline-block; */
+}
+
 .title{
     background-color: #87ceeb;
 }
@@ -54,12 +62,17 @@
     /* padding: 30px; */
 }
 .main{
-    margin-left: auto;
-    margin-right: auto;
+    height: 100%;
+    width: 1000px;
     margin-top: 10px;
     margin-bottom: 10px;
     position: absolute;
     top: 130px;
+}
+.main-tbl{
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .footer{
     background-color: #00ced1;
@@ -67,6 +80,6 @@
     width: 1000px;
     text-align: left;
     position: absolute;
-    top: 330px;
+    top: 190px;
 }
 
